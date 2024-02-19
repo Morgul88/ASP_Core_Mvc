@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="sv-en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>@ViewData["Title"] - Silicon</title>
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="first-head">
+                <div id="logo">
+                    <img src="images/Group 2.svg" alt="logo" /></Link>
+                    <span>Silicon</span>
+                </div>
+                <div id="menu">
+                    <nav>
+                        <a href="#showcase" class="menu-link">Overview</a>
+                        <a href="#features" class="menu-link">Features</a>
+                        <a href="#" class="menu-link">Contact</a>
+                    </nav>
+
+                </div>
+            </div>
+
+
+            <div class="head-btn">
+
+                <div class="btn-switch">
+                    <label>Light</label>
+                    <label class="switch" for="switch-mode">
+                        <input type="checkbox" class="switch-mode" onclick="switchBackground()">
+                        <div class="slider round"></div>
+                    </label>
+                    <label>Dark</label>
+                </div>
+
+                <div class="account-buttons">
+                    <a class="btn-gray" href="#"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
+                    <a class="btn-theme" href="#"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        @RenderBody()
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a class="btn-social" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="btn-social" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="btn-social" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a class="btn-social" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+            <p>&copy;@DateTime.Now.Year Silicon. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="~/js/site.js"></script>
+
+</body>
+</html>
+
+
