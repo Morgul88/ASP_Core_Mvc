@@ -684,3 +684,94 @@ footer .container .social-media {
   font-weight: 100;
   font-size: 20px;
 }
+
+#account-detail .container {
+  display: flex;
+}
+#account-detail .container .leftside {
+  padding: 50px;
+  width: 30%;
+  border-right: 1px solid rgb(233, 233, 233);
+}
+#account-detail .container .leftside .btn-submit .btn {
+  width: 100%;
+}
+#account-detail .container .leftside .btn-submit .btn .btn-theme {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+#account-detail .container .leftside .btn-submit .btn a {
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  padding-right: 10px;
+}
+#account-detail .container .leftside .btn-submit .btn a:hover {
+  background: #6366F1;
+}
+#account-detail .container .leftside .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#account-detail .container .leftside .profile h4 {
+  margin: 0;
+}
+#account-detail .container .right-side {
+  padding: 50px;
+  width: 60%;
+}
+#account-detail .container .right-side form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+}
+#account-detail .container .right-side form .input-validation-error {
+  color: red;
+  border-color: red;
+}
+#account-detail .container .right-side form span {
+  color: red;
+  padding-right: 20px;
+}
+#account-detail .container .right-side form .sign-in-here:hover {
+  cursor: pointer;
+}
+#account-detail .container .right-side form .first-group {
+  display: flex;
+}
+#account-detail .container .right-side form .content .btn-submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#account-detail .container .right-side form .content .input-group {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#account-detail .container .right-side form .content .input-group .input-group-flex {
+  display: flex;
+  justify-content: space-between;
+}
+#account-detail .container .right-side form .content .input-group .input-validation-error {
+  color: red;
+  border-color: red;
+}
+#account-detail .container .right-side form .content input {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgb(207, 207, 207);
+}
+#account-detail .container .right-side form .content label {
+  padding-bottom: 5px;
+  font-weight: 900;
+  font-size: 20px;
+}
+#account-detail .container .right-side form .content .check-box label {
+  font-weight: 100;
+  font-size: 20px;
+}
