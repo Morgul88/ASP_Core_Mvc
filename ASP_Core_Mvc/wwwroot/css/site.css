@@ -584,3 +584,103 @@ footer .container .social-media {
   font-weight: 100;
   font-size: 20px;
 }
+
+#signin .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+#signin .container form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 100px;
+}
+#signin .container form .hidden {
+  visibility: hidden;
+}
+#signin .container form span {
+  color: red;
+}
+#signin .container form .sign-in-here:hover {
+  cursor: pointer;
+}
+#signin .container form .error-message {
+  color: red;
+  text-align: center;
+}
+#signin .container form .content .btn-submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+#signin .container form .content .check {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#signin .container form .content .check input {
+  align-items: center;
+}
+#signin .container form .content .check label {
+  margin: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+#signin .container form .content .network {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#signin .container form .content .network p {
+  color: black;
+  font-weight: 800;
+}
+#signin .container form .content .account-buttons {
+  display: flex;
+}
+#signin .container form .content .account-buttons a {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+#signin .container form .content .account-buttons a p {
+  margin: 0;
+}
+#signin .container form .content .account-buttons .btn-gray {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#signin .container form .content .password {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+#signin .container form .content .input-group {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#signin .container form .content .input-group .input-group-flex {
+  display: flex;
+  justify-content: space-between;
+}
+#signin .container form .content input {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgb(207, 207, 207);
+}
+#signin .container form .content label {
+  padding-bottom: 10px;
+  font-weight: 900;
+  font-size: 20px;
+}
+#signin .container form .content .check-box label {
+  font-weight: 100;
+  font-size: 20px;
+}
