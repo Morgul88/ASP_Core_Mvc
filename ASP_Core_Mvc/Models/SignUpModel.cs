@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ASP_Core_Mvc.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace ASP_Core_Mvc.Models;
 
@@ -31,10 +32,16 @@ public class SignUpModel
     public string ConfirmPasword { get; set; } = null!;
 
 
-    [Display(Name = "I agree in terms", Order = 4)]
-    [Required(ErrorMessage = "Must confirm terms and Conditions")]
+    [Display(Name = "I agree in terms", Order = 5)]
+    [CheckBoxRequired(ErrorMessage ="You must accept the terms and condition to proceed.")]
     public bool TermsAndConditions { get; set; } = false;
     
 
 
 }
+
+
+
+    
+
+
