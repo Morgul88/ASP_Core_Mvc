@@ -1299,6 +1299,16 @@ footer .container .social-media {
   justify-content: center;
   border: 1px solid rgb(238, 238, 238);
 }
+#contact .container .contact-info form .hidden {
+  visibility: hidden;
+}
+#contact .container .contact-info form span {
+  color: red;
+}
+#contact .container .contact-info form .message-sent {
+  color: green;
+  text-align: center;
+}
 #contact .container .contact-info form h1 {
   padding-bottom: 30px;
 }
@@ -1316,6 +1326,10 @@ footer .container .social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#contact .container .contact-info form .content .input-group .input-group-flex {
+  display: flex;
+  justify-content: space-between;
 }
 #contact .container .contact-info form .content input {
   border-radius: 10px;
