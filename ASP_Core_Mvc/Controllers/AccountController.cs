@@ -28,4 +28,18 @@ public class AccountController : Controller
         //*accountService.SaveAdressInfo(viewModel.AdressInfoModel);*/
         return RedirectToAction(nameof(Details));
     }
+
+    [Route("/security")]
+    public IActionResult Security()
+    {
+        var viewModel = new AccountDetailsViewModel();
+        return View(viewModel);
+    }
+
+    [Route("/savedcourses")]
+    public IActionResult SavedItems()
+    {
+        var viewModel = new AccountDetailsViewModel();
+        return View(viewModel);
+    }
 }
