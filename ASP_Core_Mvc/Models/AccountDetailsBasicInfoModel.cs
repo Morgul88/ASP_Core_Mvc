@@ -22,7 +22,7 @@ public class AccountDetailsBasicInfoModel
     [Required(ErrorMessage = "Invalid email")]
     public string EmailAdress { get; set; } = null!;
 
-    [Display(Name = "Phone", Prompt = "Enter your Phon", Order = 3)]
+    [Display(Name = "Phone", Prompt = "Enter your Phone", Order = 3)]
     [DataType(DataType.PhoneNumber)]
     [Required(ErrorMessage = "Phone is required")]
     public string Phone { get; set; } = null!;

@@ -44,14 +44,15 @@
 
         .right-side {
             padding: 50px;
-            width: 60%;
+            width: 70%;
 
             form {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                padding: 100px;
+                padding-top: 20px;
+                padding-bottom: 20px;
 
                 .input-validation-error {
                     color: red;
@@ -72,6 +73,8 @@
                     display: flex;
                 }
 
+
+
                 .content {
 
                     .btn-submit {
@@ -80,6 +83,21 @@
                         width: 100%;
                     }
 
+
+
+                    .cancel-save {
+                        display: flex;
+                        padding-top: 30px;
+                        padding-right: 10px;
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid gray;
+
+
+                        .cancel {
+                            padding-right: 20px;
+
+                        }
+                    }
 
                     .input-group {
                         padding: 10px;
@@ -102,6 +120,7 @@
                         border-radius: 10px;
                         padding: 10px;
                         border: 1px solid rgb(207, 207, 207);
+                        width: 100%;
                     }
 
                     label {
