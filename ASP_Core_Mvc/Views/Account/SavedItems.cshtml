@@ -1,0 +1,99 @@
+﻿@model AccountDetailsViewModel;
+
+<section id="saved-items">
+    <div class="container">
+        <div class="leftside">
+            <div class="profile">
+
+                <a href="">
+
+                    <img src=@Model.BasicInfo.ProfileImage alt="">
+                    <h4>@($"{@Model.BasicInfo.FirstName} {@Model.BasicInfo.LastName}")</h4>
+                    <p>@Model.BasicInfo.EmailAdress</p>
+                </a>
+
+            </div>
+            <div class="btn-submit">
+                <div class="btn">
+                    <a class="btn-theme" asp-controller="Account" asp-action="Details"><i class="fa-regular fa-gear"></i>Account Details</a>
+                </div>
+                <div class="btn">
+                    <a class="btn-theme" asp-controller="Account" asp-action="Security"><i class="fa-regular fa-lock"></i>Security</a>
+                </div>
+                <div class="btn">
+                    <a class="btn-theme" asp-controller="Account" asp-action="SavedItems"><i class="fa-regular fa-bookmark"></i></i>Saved Courses</a>
+                </div>
+                <div class="btn">
+                    <a class="btn-theme" href="#"><i class="fa-solid fa-right-from-bracket"></i></i>Sign Out</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="rightside">
+            <h1>Saved items</h1>
+            <div class="box-row">
+
+                <a class="box-link" href="courses.html">
+                    <div class="box">
+                        <div class="badge">
+                            <img src="images/badge.svg" alt="">
+                        </div>
+                        <div class="marks">
+                            <img src="images/S.svg" alt="">
+                        </div>
+                        <img src="images/image (19).svg" alt="">
+                        <h6>FullStack Web Developer Courses from Scratch</h6>
+                        <p>By Robert Fox</p>
+                        <p>$12.50</p>
+                        <div class="line">
+                            <p>220 hours</p>
+                            <p>94% (4.2k)</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="box-link" href="">
+                    <div class="box">
+                        <div class="marks">
+                            <img src="images/S.svg" alt="">
+                        </div>
+                        <img src="images/image (22).svg" alt="">
+                        <h6>FullStack Web Developer Courses from Scratch</h6>
+                        <p>By Robert Fox</p>
+                        <p>$12.50</p>
+                        <div class="line">
+                            <p>220 hours</p>
+                            <p>94% (4.2k)</p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="box-row second">
+                <a class="box-link" href="">
+                    <div class="box">
+                        <div class="badge">
+                            <img src="images/badge.svg" alt="">
+                        </div>
+                        <div class="marks">
+                            <img src="images/S.svg" alt="">
+                        </div>
+                        <img src="images/image (21).svg" alt="">
+                        <h6>FullStack Web Developer Courses from Scratch</h6>
+                        <p>By Robert Fox</p>
+                        <p>$12.50</p>
+                        <div class="line">
+                            <p>220 hours</p>
+                            <p>94% (4.2k)</p>
+                        </div>
+
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+</section>
