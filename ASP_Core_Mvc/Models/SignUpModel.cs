@@ -7,10 +7,12 @@ public class SignUpModel
 {
     [Display(Name = "First Name", Prompt = "Enter you First name", Order = 0)]
     [Required(ErrorMessage = "Invalid First name")]
+    [MinLength(2, ErrorMessage = "Invalid First name")]
     public string FirstName { get; set; } = null!;
 
     [Display(Name = "Last Name", Prompt = "Enter you last name", Order = 1)]
     [Required(ErrorMessage = "Invalid Last name")]
+    [MinLength(2, ErrorMessage = "Invalid Last name")]
     public string LastName { get; set; } = null!;
 
     [Display(Name = "Email adress", Prompt = "Enter you Email", Order = 2)]

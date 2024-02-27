@@ -574,14 +574,19 @@ footer .container .social-media {
   display: flex;
   justify-content: space-between;
 }
-#signup .container form .content .input-group .input-validation-error {
-  color: red;
+#signup .container form .content .input-group .input-valdation-error {
   border-color: red;
+}
+#signup .container form .content select.input {
+  border: none;
 }
 #signup .container form .content input {
   border-radius: 10px;
   padding: 10px;
   border: 1px solid rgb(207, 207, 207);
+}
+#signup .container form .content input:focus {
+  outline: none;
 }
 #signup .container form .content label {
   padding-bottom: 5px;
