@@ -1,4 +1,8 @@
-﻿@await Html.PartialAsync("~/Views/Shared/Sections/_Showcase.cshtml");
+﻿@{
+    ViewData["Title"] = "Overview";
+ }
+
+@await Html.PartialAsync("~/Views/Shared/Sections/_Showcase.cshtml");
 @await Html.PartialAsync("~/Views/Shared/Sections/_Features.cshtml");
 @await Html.PartialAsync("~/Views/Shared/Sections/_LightAndDark.cshtml");
 @await Html.PartialAsync("~/Views/Shared/Sections/_ManageYourWork.cshtml");

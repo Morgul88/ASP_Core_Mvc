@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace ASP_Core_Mvc.Helpers;
+namespace Infrastructure.Helpers;
 
 public class CheckBoxRequired : ValidationAttribute
 {

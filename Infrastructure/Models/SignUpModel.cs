@@ -1,7 +1,7 @@
-﻿using ASP_Core_Mvc.Helpers;
+﻿using Infrastructure.Helpers;
 using System.ComponentModel.DataAnnotations;
 
-namespace ASP_Core_Mvc.Models;
+namespace Infrastructure.Models;
 
 public class SignUpModel
 {
@@ -29,21 +29,12 @@ public class SignUpModel
 
     [Display(Name = "Confirm password", Prompt = "Confirm your password", Order = 4)]
     [DataType(DataType.Password)]
-    [Compare(nameof(Password),ErrorMessage ="Password doesnt match")]
+    [Compare(nameof(Password), ErrorMessage = "Password doesnt match")]
     [Required(ErrorMessage = "Invalid Password")]
     public string ConfirmPasword { get; set; } = null!;
 
 
     [Display(Name = "I agree in terms", Order = 5)]
-    [CheckBoxRequired(ErrorMessage ="You must accept the terms and condition to proceed.")]
+    [CheckBoxRequired(ErrorMessage = "You must accept the terms and condition to proceed.")]
     public bool TermsAndConditions { get; set; } = false;
-    
-
-
 }
-
-
-
-    
-
-

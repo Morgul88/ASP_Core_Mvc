@@ -1,4 +1,4 @@
-﻿using ASP_Core_Mvc.Models;
+﻿using Infrastructure.Models;
 
 namespace ASP_Core_Mvc.ViewModels
 {

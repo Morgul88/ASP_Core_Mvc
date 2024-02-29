@@ -1,10 +1,13 @@
 ﻿using ASP_Core_Mvc.ViewModels;
+using Infrastructure.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP_Core_Mvc.Controllers;
 
-public class AuthController : Controller
+public class AuthController(UserService userService) : Controller
 {
+    private readonly UserService _userService = userService;
+
     [Route("/signup")]
     [HttpGet]
     public IActionResult SignUp()
@@ -15,12 +18,17 @@ public class AuthController : Controller
 
     [Route("/signup")]
     [HttpPost]
-    public IActionResult SignUp(SignUpViewModel viewModel)
+    public async Task<IActionResult> SignUp(SignUpViewModel viewModel)
     {
-      if(!ModelState.IsValid)
-        return View(viewModel);
+        if (ModelState.IsValid)
+        {
+            var result = await _userService.CreateUserAsync(viewModel.Form);
+            if (result.StatusCode == Infrastructure.Models.StatusCodes.OK)
+                return RedirectToAction("SignIn", "Auth");
 
-      return RedirectToAction("SignIn", "Auth");
+        }
+       
+        return View(viewModel);
     }
 
 
@@ -35,14 +43,14 @@ public class AuthController : Controller
 
     [Route("/signin")]
     [HttpPost]
-    public IActionResult SignIn(SignInViewModel viewModel)
+    public async Task<IActionResult> SignIn(SignInViewModel viewModel)
     {
-        if (!ModelState.IsValid)
-            return View(viewModel);
-        
-        //var result = _authService.SignIn(viewModel.Form);
-        //if (result)
-        //    return RedirectToAction("Account", "Index");
+        if (ModelState.IsValid)
+        {
+            var result = await _userService.SignInUserAsync(viewModel.Form);
+            if (result.StatusCode == Infrastructure.Models.StatusCodes.OK)
+                return RedirectToAction("Details", "Account");
+        }
 
         viewModel.ErrorMessage = "Email or Password is invalid";
         return View(viewModel);
