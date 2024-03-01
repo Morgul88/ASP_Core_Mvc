@@ -502,9 +502,6 @@ footer .container .social-media {
 #features .container {
   text-align: center;
 }
-#features .container .box {
-  padding: 20px;
-}
 #features .container .box:hover {
   background-color: white;
 }
@@ -520,19 +517,28 @@ footer .container .social-media {
   border-right: 1px solid rgb(226, 226, 226);
   border-bottom: 1px solid rgb(226, 226, 226);
   border-left: 1px solid rgb(226, 226, 226);
+  padding: 20px;
 }
 #features .container .box2 {
   border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 20px;
 }
 #features .container .box3 {
   border-top: 1px solid rgb(226, 226, 226);
+  padding: 20px;
 }
 #features .container .box4 {
   border-left: 1px solid rgb(226, 226, 226);
+  padding: 20px;
 }
 #features .container .box5 {
   border-left: 1px solid rgb(226, 226, 226);
+  padding: 20px;
 }
+#features .container .box6 {
+  padding: 20px;
+}
+
 #signup .container {
   display: flex;
   justify-content: center;

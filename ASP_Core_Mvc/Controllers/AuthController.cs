@@ -47,9 +47,9 @@ public class AuthController(UserService userService) : Controller
     {
         if (ModelState.IsValid)
         {
-            var result = await _userService.SignInUserAsync(viewModel.Form);
-            if (result.StatusCode == Infrastructure.Models.StatusCodes.OK)
-                return RedirectToAction("Details", "Account");
+            //var result = await _userService.SignInUserAsync(viewModel.Form);
+            //if (result.StatusCode == Infrastructure.Models.StatusCodes.OK)
+            //    return RedirectToAction("Details", "Account");
         }
 
         viewModel.ErrorMessage = "Email or Password is invalid";

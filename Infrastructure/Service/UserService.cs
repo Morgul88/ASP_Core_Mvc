@@ -33,25 +33,25 @@ public class UserService(UserRepository repository, AdressService adressService)
         }
     }
 
-    public async Task<ResponseResult> SignInUserAsync(SignInModel model)
-    {
-        try
-        {
-            var result = await _repository.GetOneAsync(x => x.Email == model.EmailAdress);
-            if (result.StatusCode == StatusCodes.OK && result.ContentResult != null)
-            {
-                var userEntity = (UserEntity)result.ContentResult;
+    //public async Task<ResponseResult> SignInUserAsync(SignInModel model)
+    //{
+    //    try
+    //    {
+    //        var result = await _repository.GetOneAsync(x => x.Email == model.EmailAdress);
+    //        if (result.StatusCode == StatusCodes.OK && result.ContentResult != null)
+    //        {
+    //            var userEntity = (UserEntity)result.ContentResult;
 
-                if (PasswordHasher.ValidateSecurePassword(model.Password, userEntity.Password, userEntity.SecurityKey))
-                    return ResponseFactory.Ok();
+    //            if (PasswordHasher.ValidateSecurePassword(model.Password, userEntity.Password, userEntity.SecurityKey))
+    //                return ResponseFactory.Ok();
 
-            }
-            return ResponseFactory.Error("Incorrect email or password");
+    //        }
+    //        return ResponseFactory.Error("Incorrect email or password");
 
-        }
-        catch (Exception ex)
-        {
-            return ResponseFactory.Error(ex.Message);
-        }
-    }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        return ResponseFactory.Error(ex.Message);
+    //    }
+    //}
 }

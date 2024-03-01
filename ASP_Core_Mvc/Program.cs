@@ -12,6 +12,11 @@ builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<AdressService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<FeatureService>();
+builder.Services.AddScoped<FeatureRepository>();
+builder.Services.AddScoped<FeatureItemRepository>();
+
+
+
 
 var app = builder.Build();
 app.UseHsts();
